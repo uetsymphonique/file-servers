@@ -5,3 +5,9 @@ csc.exe /out:Downloader.exe /optimize+ Downloader.cs
 echo Building BITS downloader...
 csc.exe /out:BitsDownloader.exe /optimize+ BitsDownloader.cs
 
+echo Building Clipboard runner...
+csc.exe /out:ClipboardRunner.exe /optimize+ /r:System.Windows.Forms.dll ClipboardRunner.cs
+
+echo Building ADS runner...
+csc.exe /out:AdsRunner.exe /optimize+ AdsRunner.cs
+
